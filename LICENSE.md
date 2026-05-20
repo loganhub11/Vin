@@ -1,10 +1,1 @@
-Bible 
-books
-politics 
-conspiracy theories 
-movies 
-music 
-stories 
-history 
-science 
-health 
+This project is free to use and modify.
