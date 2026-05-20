@@ -3,26 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calvin's Media Hub</title>
+    <title>Vin Movies</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { background-color: #111; color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 20px; }
+        header { text-align: center; margin-bottom: 30px; }
+        header h1 { color: #e50914; font-size: 2.5rem; } /* Netflix Red */
+        
+        /* Movie Grid Layout */
+        .movie-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; }
+        .movie-card { background: #222; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.5); text-align: center; transition: transform 0.2s; }
+        .movie-card:hover { transform: scale(1.05); }
+        .movie-card img { width: 100%; height: 240px; object-fit: cover; }
+        .movie-info { padding: 10px; }
+        .movie-title { font-size: 1rem; margin-bottom: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        
+        /* Action Buttons */
+        .btn { display: inline-block; background: #e50914; color: white; text-decoration: none; padding: 8px 12px; border-radius: 4px; font-weight: bold; font-size: 0.85rem; margin: 5px; }
+        .btn-stream { background: #333; border: 1px solid #fff; }
+    </style>
 </head>
 <body>
 
-    <h1>Welcome to My Media & Bible Stories Hub</h1>
-    <hr>
+    <header>
+        <h1>VIN BOX</h1>
+        <p>Stream & Download Movies</p>
+    </header>
 
-    <h2>📖 Bible Stories</h2>
-    <h3>The Story of David and Goliath</h3>
-    <p>A young shepherd boy defeats a giant warrior with just a sling and a stone...</p>
+    <div class="movie-grid">
+        <div class="movie-card">
+            <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=500" alt="Movie Poster">
+            <div class="movie-info">
+                <div class="movie-title">Example Movie 1</div>
+                <a href="YOUR_STREAM_LINK_HERE" class="btn btn-stream">Stream</a>
+                <a href="YOUR_DOWNLOAD_LINK_HERE" class="btn" download>Download</a>
+            </div>
+        </div>
 
-    <h2>🎵 Favorite Songs</h2>
-    <p>Listen to this inspirational track:</p>
-    <audio controls>
-        <source src="your-song-file.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-
-    <h2>🎬 Videos & Movies</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+        <div class="movie-card">
+            <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=500" alt="Movie Poster">
+            <div class="movie-info">
+                <div class="movie-title">Example Movie 2</div>
+                <a href="YOUR_STREAM_LINK_HERE" class="btn btn-stream">Stream</a>
+                <a href="YOUR_DOWNLOAD_LINK_HERE" class="btn" download>Download</a>
+            </div>
+        </div>
+    </div>
 
 </body>
-</html>
+                </html>
+                
